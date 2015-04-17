@@ -1,0 +1,20 @@
+{
+  "name": "Experiment-1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ashfame/Experiment-1",
+  "authors": [
+    "stirredo <stirredo@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "compass-mixins": "~1.0.2",
+    "animate.css": "~3.2.6"
+  }
+}

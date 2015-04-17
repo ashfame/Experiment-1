@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/content.css"/>
+    <script src="js/libraries.js"></script>
+</head>
+<body>
+<div id="navbar">
+    <div class="row">
+        <nav class="large-12 columns">
+            <a href="/" class="logo"><h3 class="left">ExperimentLogo</h3></a>
+        </nav>
+    </div>
+</div>
+<div class="slide row">
+    <div class="content">
+        <section class="large-12 columns">
+            <h1 class="animated bounceInDown">Don't you hate when your contact form stops working and you don't even
+                know
+                it?</h1>
+            <a href="#" class="button large radius orange animated yes">Yes</a>
+        </section>
+        <section class="hide large-12 columns">
+            <h1 class="animated bounceInDown">Would you like to use a tool which can alert you when that happens?</h1>
+            <a href="#" class="button large radius orange animated yes">Yes</a>
+        </section>
+        <section class="hide large-12 large-centered columns">
+            <h1 class="animated bounceInDown">Sign up for our newsletter!</h1>
+            <form action="">
+                <div class="row">
+                    <div class="large-8 large-centered columns">
+                        <div class="row collapse">
+                            <div class="small-10 columns">
+                                <input type="text" placeholder="Your email address">
+                            </div>
+                            <div class="small-2 columns">
+                                <a href="#" class="button postfix">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </div>
+</div>
+<div class="slide row">
+    <div class="content">
+        <h1>Don't you hate when your contact form stops working and you don't even know it?</h1>
+        <a href="#" class="button large radius orange animated yes">Yes</a>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        count = 0;
+        $(".yes").click(function (e) {
+            e.preventDefault();
+            var section = $(this).closest('section');
+            var content = section.closest('.content');
+            section.slideUp();
+            content.children('section').eq(++count).removeClass('hide').slideDown();
+        });
+
+    });
+</script>
+</body>
+</html>
