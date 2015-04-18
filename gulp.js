@@ -26,8 +26,17 @@ gulp.task('js',function(){
 
 gulp.task('watch',function(){
     gulp.watch('./bower_components/foundation/**/*.scss',['styles']);
+    gulp.watch('./blog/scss/**/*.scss',['blogStyles']);
 
 });
 
-gulp.task('default',['styles','jsLibrary','js','watch']);
+gulp.task('blogStyles', function () {
+    return gulp.src(['./blog/scss/**/*.scss'])
+        .pipe(sass())
+        .pipe(minifyCSS())
+        .pipe(concat('styles.css'))
+        .pipe(gulp.dest('./blog/css/'))
+});
+
+gulp.task('default',['styles','jsLibrary','js','blogStyles','watch']);
 
