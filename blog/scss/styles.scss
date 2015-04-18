@@ -104,7 +104,7 @@ article + article {
   margin-top: 80px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   main {
     width: 90%;
   }
@@ -112,7 +112,7 @@ article + article {
     img {
       position: fixed;
       top: 4%;
-      left: -34%;
+      left: -24%;
       height: 100%;
     }
   }
