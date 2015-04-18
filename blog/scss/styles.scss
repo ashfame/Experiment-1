@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700,800,400);
-
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css);
 body {
   font: 16px/1.6 "Open Sans";
   color: white;
@@ -42,9 +42,7 @@ main {
   margin-top: 80px;
 
 }
-section.avatar {
 
-}
 
 article {
   h1 {
@@ -71,10 +69,14 @@ article {
 .avatar {
   img {
     border-radius: 50%;
-    border: 5px solid rgba(white, 0.8);
+    border: 8px solid rgba(white, 0.8);
     display: table;
     margin: 0 auto;
+    margin-bottom: 10px;
 
+  }
+  p {
+    margin: 0;
   }
   .name {
     text-align: center;
