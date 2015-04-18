@@ -312,10 +312,9 @@ form .row .row.collapse input{-webkit-border-bottom-right-radius:0;-webkit-borde
 form .row input.column,form .row input.columns,form .row textarea.column,form .row textarea.columns{padding-left:.5rem}
 label{color:#4d4d4d;cursor:pointer;display:block;line-height:1.5;margin-bottom:0}
 label.right{float:none!important;text-align:right}
-.postfix,.prefix,.slide .content section h1{text-align:center}
 label.inline{padding:.5625rem 0}
 label small{text-transform:capitalize;color:#676767}
-.postfix,.prefix{display:block;position:relative;z-index:2;width:100%;padding-top:0;padding-bottom:0;overflow:visible;height:2.3125rem;line-height:2.3125rem}
+.postfix,.prefix{display:block;position:relative;z-index:2;text-align:center;width:100%;padding-top:0;padding-bottom:0;overflow:visible;height:2.3125rem;line-height:2.3125rem}
 select[multiple],textarea[rows]{height:auto}
 .postfix.button,.prefix.button{padding:0;text-align:center;border:none}
 .prefix.button.radius{border-radius:3px 0 0 3px;-webkit-border-bottom-left-radius:3px;-webkit-border-top-left-radius:3px}
@@ -355,7 +354,7 @@ small.error,span.error{display:block;margin-bottom:1rem;color:#FFF}
 .error small.error{display:block;color:#FFF}
 .error>label>small{color:#676767;background:0 0;padding:0;text-transform:capitalize;font-style:normal;font-size:60%;margin:0;display:inline}
 .error span.error-message{display:block}
-.centered,.slide .content section a{display:table;margin:0 auto}
+.centered,.slide section a{display:table;margin:0 auto}
 label.error{color:#f04124}
 @media only screen{.hide-for-large,.hide-for-large-only,.hide-for-large-up,.hide-for-medium,.hide-for-medium-only,.hide-for-medium-up,.hide-for-xlarge,.hide-for-xlarge-only,.hide-for-xlarge-up,.hide-for-xxlarge,.hide-for-xxlarge-only,.hide-for-xxlarge-up,.show-for-large-down,.show-for-medium-down,.show-for-small,.show-for-small-down,.show-for-small-only,.show-for-small-up,.show-for-xlarge-down,.show-for-xxlarge-down{display:inherit!important}
 .hide-for-large-down,.hide-for-medium-down,.hide-for-small,.hide-for-small-down,.hide-for-small-only,.hide-for-small-up,.hide-for-xlarge-down,.hide-for-xxlarge-down,.show-for-large,.show-for-large-only,.show-for-large-up,.show-for-medium,.show-for-medium-only,.show-for-medium-up,.show-for-xlarge,.show-for-xlarge-only,.show-for-xlarge-up,.show-for-xxlarge,.show-for-xxlarge-only,.show-for-xxlarge-up{display:none!important}
@@ -453,16 +452,20 @@ thead.show-for-print{display:table-header-group!important}
 tbody.show-for-print{display:table-row-group!important}
 tr.show-for-print{display:table-row!important}
 td.show-for-print,th.show-for-print{display:table-cell!important}}
+main{background-image:-webkit(linear-gradient(to right,#085078,#85d8ce));background-image:-moz(linear-gradient(to right,#085078,#85d8ce));background-image:-o(linear-gradient(to right,#085078,#85d8ce));background-image:linear-gradient(to right,#085078,#85d8ce)}
+.wrapper,main{background-image:-owg(linear-gradient(to right,#085078,#85d8ce))}
 #navbar{border-bottom:1px solid rgba(26,26,26,.13);border-top:7px solid #FF5722}
 #navbar nav a.logo{text-decoration:inherit;cursor:inherit;color:#FF5722;font-weight:400}
 #navbar nav a.logo:active,#navbar nav a.logo:focus{outline:0}
 #navbar nav a.logo h3{font-size:1.5rem}
 .slide{min-height:100%;position:relative}
-.slide .content section{position:absolute;top:21%}
+.slide section{position:absolute;top:21%}
+.slide section h1{text-align:center;color:#fff}
 .orange{background-color:#FF5722}
 .orange:hover{background-color:#bb2d00}
 .orange:active{background-color:#882100}
 .form{width:500px;margin:0 auto}
+.wrapper{width:100%;max-width:100%;height:100%;background-image:-webkit(linear-gradient(to right,#085078,#85d8ce));background-image:-moz(linear-gradient(to right,#085078,#85d8ce));background-image:-o(linear-gradient(to right,#085078,#85d8ce));background-image:linear-gradient(to right,#085078,#85d8ce)}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 hr,input[type=search]{-moz-box-sizing:content-box;box-sizing:content-box}
 img,legend{border:0}
