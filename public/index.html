@@ -17,18 +17,18 @@
 <div class="wrapper clearfix">
     <div class="slide row">
         <section class="large-12 columns">
-            <h1 class="animated bounceInDown">Don't you hate when your contact form stops working and you don't even
+            <h1 class="animated fadeIn">Don't you hate when your contact form stops working and you don't even
                 know
                 it?</h1>
             <a href="#" class="button large radius orange animated yes">Yes</a>
         </section>
         <section class="hide large-12 columns">
-            <h1 class="animated bounceInDown">Would you like to use a tool which can alert you when that
+            <h1 class="animated fadeIn">Would you like to use a tool which can alert you when that
                 happens?</h1>
             <a href="#" class="button large radius orange animated yes">Yes</a>
         </section>
         <section class="hide large-12 large-centered columns">
-            <h1 class="animated bounceInDown">Sign up for our newsletter!</h1>
+            <h1 class="animated fadeIn">Sign up for our newsletter!</h1>
 
             <form action="">
                 <div class="row">
@@ -60,7 +60,7 @@
             e.preventDefault();
             var section = $(this).closest('section');
             var content = section.closest('.slide');
-            section.slideUp();
+            section.hide();
             content.children('section')
                     .eq(++count)
                     .removeClass('hide')
